@@ -1,0 +1,29 @@
+
+
+.containerlist{
+    width: 33%;
+    display: block;
+    background-color: white;
+}
+.btn{
+    width: 100%;
+}
+.ordercontainer{
+    background-color: white;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.blocklist{
+    display: flex;
+}
+.cart{
+    background-color: white;
+    border-radius: 30px;
+display: block;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    border: 3px solid black;
+}
