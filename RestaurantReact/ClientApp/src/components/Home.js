@@ -1,25 +1,68 @@
-import React, { Component } from 'react';
-
+import React, { Component } from "react";
+import "./Home.css";
+import firstimg from "../Images/1.jpg";
+import secondtimg from "../Images/2.jpg";
+import thirdimg from "../Images/3.jpg";
 export class Home extends Component {
   static displayName = Home.name;
 
   render() {
     return (
-      <div>
-        <h1>Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with:</p>
-        <ul>
-          <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-          <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-        </ul>
-        <p>To help you get started, we have also set up:</p>
-        <ul>
-          <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-          <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-          <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
-        </ul>
-        <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
+      <div className="main">
+        <div className="left">
+          <img src={firstimg}></img>
+          <div>
+            <p>
+              Cupidatat Lorem consectetur fugiat culpa adipisicing enim
+              voluptate cillum. Mollit eiusmod dolor eu tempor sint. Aliqua ex
+              deserunt sunt pariatur consequat tempor officia. Fugiat ullamco
+              aliquip occaecat velit minim velit aliquip minim elit. Consectetu
+              r sint nulla labore nisi. Ex occaecat elit tempor quis sunt id
+              mollit sit ut ut. Cupidatat Lorem consectetur fugiat culpa
+              adipisicing enim voluptate cillum. Mollit eiusmod dolor eu tempor
+              sint. Aliqua ex deserunt sunt pariatur consequat tempor officia.
+              Fugiat ullamco aliquip occaecat velit minim velit aliquip minim
+              elit. Consectetu r sint nulla labore nisi. Ex occaecat elit tempor
+              quis sunt id mollit sit ut ut.
+            </p>
+          </div>
+        </div>
+        <div className="right">
+          <div>
+            <p>
+              Cupidatat Lorem consectetur fugiat culpa adipisicing enim
+              voluptate cillum. Mollit eiusmod dolor eu tempor sint. Aliqua ex
+              deserunt sunt pariatur consequat tempor officia. Fugiat ullamco
+              aliquip occaecat velit minim velit aliquip minim elit. Consectetu
+              r sint nulla labore nisi. Ex occaecat elit tempor quis sunt id
+              mollit sit ut ut. Cupidatat Lorem consectetur fugiat culpa
+              adipisicing enim voluptate cillum. Mollit eiusmod dolor eu tempor
+              sint. Aliqua ex deserunt sunt pariatur consequat tempor officia.
+              Fugiat ullamco aliquip occaecat velit minim velit aliquip minim
+              elit. Consectetu r sint nulla labore nisi. Ex occaecat elit tempor
+              quis sunt id mollit sit ut ut.
+            </p>
+          </div>
+          <img src={secondtimg}></img>
+        </div>
+        <div className="left">
+          <img src={thirdimg}></img>
+          <div>
+            <p>
+              Cupidatat Lorem consectetur fugiat culpa adipisicing enim
+              voluptate cillum. Mollit eiusmod dolor eu tempor sint. Aliqua ex
+              deserunt sunt pariatur consequat tempor officia. Fugiat ullamco
+              aliquip occaecat velit minim velit aliquip minim elit. Consectetu
+              r sint nulla labore nisi. Ex occaecat elit tempor quis sunt id
+              mollit sit ut ut. Cupidatat Lorem consectetur fugiat culpa
+              adipisicing enim voluptate cillum. Mollit eiusmod dolor eu tempor
+              sint. Aliqua ex deserunt sunt pariatur consequat tempor officia.
+              Fugiat ullamco aliquip occaecat velit minim velit aliquip minim
+              elit. Consectetu r sint nulla labore nisi. Ex occaecat elit tempor
+              quis sunt id mollit sit ut ut.
+            </p>
+          </div>
+        </div>
       </div>
     );
   }

@@ -15,9 +15,10 @@ export class FetchData extends Component {
       drinklist: [],
       loading: true,
       orderlist: [],
-      height: 220,
+      height: 320,
     };
     this.NewMember = this.NewMember.bind(this);
+    this.Order = this.Order.bind(this);
   }
 
   componentDidMount() {
@@ -74,14 +75,23 @@ export class FetchData extends Component {
         height={this.state.height}
       >
         <div className="cart">
-          <h1 id="tableLabel">Weather forecast</h1>
-          <p>This component demonstrates fetching data from the server.</p>
+          <div className="inlineblock">
+            <div className="blockblock">
+              <h1 id="tableLabel">Chosse order</h1>
+              <p>This component demonstrates fetching data from the server.</p>
+            </div>
+            <div>
+              <button className="orderbtn" onClick={() => this.Order()}>
+                Order
+              </button>
+            </div>
+          </div>
           {contents}
           <div className="line"></div>
           <div className="ordercontainer">
             {this.state.orderlist.map((e) => {
               return (
-                <CartComponent
+                <CartComponent key={e.name}
                   item={e}
                   CallBackDelete={(item) => {
                     this.Delete(item);
@@ -143,5 +153,24 @@ export class FetchData extends Component {
       }
     });
     this.setState({ loading: false });
+  }
+  Order() {
+    let temp=[]
+    this.state.orderlist.forEach((e)=>{
+      temp.push({
+        Name:e.name,
+         Price :e.price,
+         Category:e.category, 
+        Description :e.description
+      })
+    })
+console.log(temp);
+    fetch("/order", { method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(temp) })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
 }

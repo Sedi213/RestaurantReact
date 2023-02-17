@@ -18,7 +18,9 @@ code {
 }
 html,body{
   background-image: url('./Images/back.jpg') ;
-min-height: 100vh;   
+  min-height: 100vh;  
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 main{

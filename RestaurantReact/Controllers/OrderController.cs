@@ -17,8 +17,9 @@ namespace Restaurant.Controllers
         }
 
         [HttpPost]
-        public int GetPayment(IEnumerable<PriceAble> list)
+        public async Task<int> GetPayment([FromBody] IEnumerable<PriceAble> list)
         {
+
             return list.Sum(p => p.Price);
         }
     }

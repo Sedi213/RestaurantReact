@@ -1,29 +1,75 @@
+.blockblock {
+  display: block;
+}
+.inlineblock {
+  display: flex;
+  justify-content: space-between;
+}
+.containerlist {
+  width: 33%;
+  display: block;
+  background-color: white;
+}
 
 
-.containerlist{
-    width: 33%;
-    display: block;
-    background-color: white;
+.orderbtn {
+    margin-top: 25px;
+    margin-right: 65px;
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+
+  min-height: 60px;
+  min-width: 60px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
 }
-.btn{
-    width: 100%;
+
+.orderbtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
-.ordercontainer{
-    background-color: white;
-    display: block;
-    text-align: center;
-    justify-content: center;
+
+.orderbtn:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
-.blocklist{
-    display: flex;
+.btn {
+  width: 100%;
 }
-.cart{
-    background-color: white;
-    border-radius: 30px;
-display: block;
+.ordercontainer {
+  background-color: white;
+  display: block;
+  text-align: center;
+  justify-content: center;
 }
-.line{
-    width: 100%;
-    height: 2px;
-    border: 3px solid black;
+.blocklist {
+  display: flex;
+}
+.cart {
+  background-color: white;
+  border-radius: 30px;
+  display: block;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  border: 3px solid black;
 }
